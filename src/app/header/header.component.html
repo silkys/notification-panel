@@ -1,0 +1,18 @@
+<div class="header">
+  <span class="notification-icon" (click)="toggleNotifications()">
+    <i class="fa fa-bell"></i>
+  </span>
+</div>
+
+<div class="notification-panel" *ngIf="showNotifications">
+  <div *ngFor="let notification of displayedNotifications; index as i" class="notification" [ngClass]="{
+    'notification-color-1': i === 0,
+    'notification-color-2': i === 1,
+    'notification-color-3': i === 2,
+    'notification-color-4': i === 3,
+    'notification-color-5': i === 4
+  }">
+    <h3>{{ notification?.title }}</h3>
+    <p>{{ notification?.body }}</p>
+  </div>
+</div>

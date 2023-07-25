@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+}
+
+.notification-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.notification-panel {
+  position: relative;
+  top: 40px;
+  right: 0;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: block;
+}
+.title {
+  background: whitesmoke;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+
+.notification {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 35rem;
+}
+
+.notification-color-1 {
+  background-color:transparent;
+}
+
+.notification-color-2 {
+  background-color:green;
+}
+
+.notification-color-3 {
+  background-color: yellow;
+}
+
+.notification-color-4 {
+  background-color: red;
+}
+
+.notification-color-5 {
+  background-color: blue;
+}
+
+.notification-panel.active {
+  display: block;
+}
